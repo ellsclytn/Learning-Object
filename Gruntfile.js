@@ -20,6 +20,15 @@ module.exports = function(grunt) {
         }
       },
     },
+    // Copy
+    copy: {
+      fonts: {
+        cwd: 'bower_components/components-font-awesome/fonts',
+        src: '**/*',
+        dest: 'fonts',
+        expand: true
+      }
+    },
     // Watch
     watch: {
       options: {
@@ -41,8 +50,9 @@ module.exports = function(grunt) {
   // Plugin loads
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['compass']);
+  grunt.registerTask('default', ['compass', 'copy']);
 };
