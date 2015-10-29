@@ -1,3 +1,15 @@
 .btn {
   border-radius: $border-radius;
 }
+
+.btn-default {
+  background-color: $wedgewood;
+  color: $lemon;
+  border-color: $bluechill;
+}
+
+.btn-default:hover {
+  background-color: $midnight;
+  color: $lemon;
+  border-color: $bluechill;
+}

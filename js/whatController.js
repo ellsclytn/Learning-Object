@@ -4,3 +4,8 @@ app.controller('WhatController', ['$scope',
   }
 ]);
 
+app.controller('WhatQuizController', ['$scope',
+  function ($scope) {
+    // TODO: Code
+  }
+]);

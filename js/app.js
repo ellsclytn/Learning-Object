@@ -1,8 +1,8 @@
 var app = angular.module('app', ['ngRoute', 'appControllers']);
 var appControllers = angular.module('appControllers', []);
 
-app.config(['$routeProvider', '$locationProvider',
-  function ($routeProvider, $locationProvider) {
+app.config(['$routeProvider',
+  function ($routeProvider) {
     $routeProvider.
     when('/', {
       templateUrl: 'partials/home.html',
@@ -11,6 +11,10 @@ app.config(['$routeProvider', '$locationProvider',
     when('/what', {
       templateUrl: 'partials/what.html',
       controller: 'WhatController'
+    }).
+    when('/what/quiz', {
+      templateUrl: 'partials/quiz/what.html',
+      controller: 'WhatQuizController'
     }).
     when('/why', {
       templateUrl: 'partials/why.html',
@@ -23,8 +27,6 @@ app.config(['$routeProvider', '$locationProvider',
     otherwise({
       redirectTo: '/'
     });
-
-    $locationProvider.html5Mode(true);
   }
 ]);
 
