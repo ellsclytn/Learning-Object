@@ -3,13 +3,27 @@
 }
 
 .btn-default {
-  background-color: $wedgewood;
-  color: $lemon;
-  border-color: $bluechill;
+  background-color: $bluechill;
+  color: $midnight;
+  border-color: $wedgewood;
+  font-weight: 600;
+  padding: 10px 20px;
 }
 
 .btn-default:hover {
   background-color: $midnight;
+  border-color: $wedgewood;
   color: $lemon;
-  border-color: $bluechill;
+}
+
+.btn-default:active {
+  background-color: $wedgewood;
+  border-color: $wedgewood;
+  color: $lemon;
+}
+
+.btn-default:focus {
+  background-color: $wedgewood;
+  border-color: $wedgewood;
+  color: $lemon;
 }

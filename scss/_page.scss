@@ -20,3 +20,8 @@
   left:     50%;
   @include translate(-50%, -50%);
 }
+
+// Quiz
+.question {
+  font-weight: 600;
+}
