@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute', 'appControllers']);
+var app            = angular.module('app', ['ngRoute', 'appControllers']);
 var appControllers = angular.module('appControllers', []);
 
 app.config(['$routeProvider',
@@ -6,23 +6,23 @@ app.config(['$routeProvider',
     $routeProvider.
     when('/', {
       templateUrl: 'partials/home.html',
-      controller: 'HomeController'
+      controller:  'HomeController'
     }).
     when('/what', {
       templateUrl: 'partials/what.html',
-      controller: 'WhatController'
+      controller:  'WhatController'
     }).
     when('/what/quiz', {
       templateUrl: 'partials/quiz/what.html',
-      controller: 'WhatQuizController'
+      controller:  'WhatQuizController'
     }).
     when('/why', {
       templateUrl: 'partials/why.html',
-      controller: 'WhyController'
+      controller:  'WhyController'
     }).
     when('/how', {
       templateUrl: 'partials/how.html',
-      controller: 'HowController'
+      controller:  'HowController'
     }).
     otherwise({
       redirectTo: '/'
@@ -30,3 +30,11 @@ app.config(['$routeProvider',
   }
 ]);
 
+/*
+ * Helpers
+ */
+
+// Select a random answer
+function randomAnswer() {
+  return String(Math.floor(Math.random() * 3 + 1));
+}
