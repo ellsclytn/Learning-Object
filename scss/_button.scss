@@ -3,27 +3,22 @@
 }
 
 .btn-default {
-  background-color: $bluechill;
-  color: $midnight;
-  border-color: $wedgewood;
-  font-weight: 600;
-  padding: 10px 20px;
+  background-color: $orange;
+  border-color:     $purple;
+  color:            $purple;
+  font-weight:      600;
+  padding:          10px 20px;
+  @include transition(background-color 0.5s, color 0.5s, border-color 0.5s);
 }
 
 .btn-default:hover {
-  background-color: $midnight;
-  border-color: $wedgewood;
-  color: $lemon;
+  background-color: $purple;
+  color:            $orange;
+  border-color:     $orange;
 }
 
-.btn-default:active {
-  background-color: $wedgewood;
-  border-color: $wedgewood;
-  color: $lemon;
-}
-
-.btn-default:focus {
-  background-color: $wedgewood;
-  border-color: $wedgewood;
-  color: $lemon;
+.btn-default:active, .btn-default:focus {
+  background-color: darken($purple, 10%);
+  border-color:     $orange;
+  color:            $orange;
 }

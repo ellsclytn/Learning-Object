@@ -23,7 +23,7 @@
       Never. They are not compulsory.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.when.correct">{{answers.when.reason[answers.when.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.when.correct" class="quiz-feedback">{{answers.when.reason[answers.when.selected - 1]}}</p>
 
   <p class="question">How often are you required to renew your Tax File Number?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.renew.correct"></i>
@@ -47,7 +47,7 @@
       With each new job you get.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.renew.correct">{{answers.renew.reason[answers.renew.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.renew.correct" class="quiz-feedback">{{answers.renew.reason[answers.renew.selected - 1]}}</p>
 
   <p class="question">Why is it a good idea to have a Tax File Number as an employee?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.employee.correct"></i>
@@ -71,7 +71,7 @@
       So you can get pay rises.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.employee.correct">{{answers.employee.reason[answers.employee.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.employee.correct" class="quiz-feedback">{{answers.employee.reason[answers.employee.selected - 1]}}</p>
 
   <p class="question">Why is a Tax File Number useful with superannuation?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.super.correct"></i>
@@ -95,7 +95,7 @@
       Your employer will contribute twice as much to your super than if you didn't have a Tax File Number.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.super.correct">{{answers.super.reason[answers.super.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.super.correct" class="quiz-feedback">{{answers.super.reason[answers.super.selected - 1]}}</p>
 
   <p class="question">Why is a Tax File Number useful with Centrelink assistance?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.centrelink.correct"></i>
@@ -119,7 +119,7 @@
       You can claim more tax back if you have Centrelink assistance with a Tax File Number.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.centrelink.correct">{{answers.centrelink.reason[answers.centrelink.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.centrelink.correct" class="quiz-feedback">{{answers.centrelink.reason[answers.centrelink.selected - 1]}}</p>
 
   <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
   <div ng-show="answers.correct < 5 && answers.submitted">

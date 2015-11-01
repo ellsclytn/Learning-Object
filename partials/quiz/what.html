@@ -23,7 +23,7 @@
       To identify each tax invoice sent to taxpayers.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.purpose.correct">{{answers.purpose.reason[answers.purpose.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.purpose.correct" class="quiz-feedback">{{answers.purpose.reason[answers.purpose.selected - 1]}}</p>
 
   <p class="question">Under what circumstances may a Tax File Number change?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.circumstance.correct"></i>
@@ -47,7 +47,7 @@
       If the holder has their name changed.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.circumstance.correct">{{answers.circumstance.reason[answers.circumstance.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.circumstance.correct" class="quiz-feedback">{{answers.circumstance.reason[answers.circumstance.selected - 1]}}</p>
 
   <p class="question">What systems is a Tax File Number used for?
     <i class="fa fa-times" ng-show="answers.submitted && !answers.uses.correct"></i>
@@ -71,7 +71,7 @@
       Both of the above.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.uses.correct">{{answers.uses.reason[answers.uses.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.uses.correct" class="quiz-feedback">{{answers.uses.reason[answers.uses.selected - 1]}}</p>
 
   <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
   <div ng-show="answers.correct < 3 && answers.submitted">

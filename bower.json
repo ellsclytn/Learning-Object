@@ -5,8 +5,7 @@
     "angular": "~1.4.7",
     "angular-route": "~1.4.7",
     "bootstrap-sass": "~3.3.5",
-    "components-font-awesome": "~4.4.0",
-    "hover": "Hover#~2.0.2"
+    "components-font-awesome": "~4.4.0"
   },
   "private": true
 }

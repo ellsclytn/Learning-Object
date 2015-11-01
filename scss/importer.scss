@@ -2,9 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../bower_components/components-font-awesome/css/font-awesome.min.css';
-@import '../bower_components/hover/scss/hover';
 
 // Custom
+@import 'utils';
 @import 'variables';
 @import 'type';
 @import 'button';

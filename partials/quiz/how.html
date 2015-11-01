@@ -23,7 +23,7 @@
       By filling out a physical or online form.
     </label>
   </div>
-  <p ng-show="answers.submitted && !answers.when.correct">{{answers.applying.reason[answers.applying.selected - 1]}}</p>
+  <p ng-show="answers.submitted && !answers.when.correct" class="quiz-feedback">{{answers.applying.reason[answers.applying.selected - 1]}}</p>
 
   <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
   <div ng-show="answers.correct < 1 && answers.submitted">
