@@ -1,14 +1,14 @@
 .home-menu {
   text-align: center;
-  font-size:  $font-size-h1;
+  font-size:  floor((14px * 2.6));
 
   .btn {
-    font-size: $font-size-h1;
+    font-size:  floor((14px * 2.6));
     width:     100%;
   }
 
   .pull-right {
-    line-height: $line-height-base;
+    line-height: 1.428571429;
   }
 }
 
