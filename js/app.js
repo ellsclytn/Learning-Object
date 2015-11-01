@@ -20,6 +20,10 @@ app.config(['$routeProvider',
       templateUrl: 'partials/why.html',
       controller:  'WhyController'
     }).
+    when('/why/quiz', {
+      templateUrl: 'partials/quiz/why.html',
+      controller:  'WhatQuizController'
+    }).
     when('/how', {
       templateUrl: 'partials/how.html',
       controller:  'HowController'

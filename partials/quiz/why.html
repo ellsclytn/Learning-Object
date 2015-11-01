@@ -1,0 +1,136 @@
+<div class="container">
+  <h1>Why Should I Get a Tax File Number? - Quiz</h1>
+
+  <p class="question">When do you have to get a Tax File Number?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.when.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.when.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="when" value="1" checked ng-model="answers.when.selected" />
+      Before turning 18 years old.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="when" value="2" ng-model="answers.when.selected" />
+      Before getting a job.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="when" value="3" ng-model="answers.when.selected" />
+      Never. They are not compulsory.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.when.correct">{{answers.when.reason[answers.when.selected - 1]}}</p>
+
+  <p class="question">How often are you required to renew your Tax File Number?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.renew.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.renew.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="renew" value="1" checked ng-model="answers.renew.selected" />
+      Annually.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="renew" value="2" ng-model="answers.renew.selected" />
+      Never.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="renew" value="3" ng-model="answers.renew.selected" />
+      With each new job you get.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.renew.correct">{{answers.renew.reason[answers.renew.selected - 1]}}</p>
+
+  <p class="question">Why is it a good idea to have a Tax File Number as an employee?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.employee.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.employee.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="employee" value="1" checked ng-model="answers.employee.selected" />
+      So you can claim back your withheld income tax.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="employee" value="2" ng-model="answers.employee.selected" />
+      So you won't have any income tax withheld.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="employee" value="3" ng-model="answers.employee.selected" />
+      So you can get pay rises.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.employee.correct">{{answers.employee.reason[answers.employee.selected - 1]}}</p>
+
+  <p class="question">Why is a Tax File Number useful with superannuation?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.super.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.super.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="super" value="1" checked ng-model="answers.super.selected" />
+      Getting a Tax File Number will automatically make a super fund for you.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="super" value="2" ng-model="answers.super.selected" />
+      You can easily link your Tax File Number to your super fund.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="super" value="3" ng-model="answers.super.selected" />
+      Your employer will contribute twice as much to your super than if you didn't have a Tax File Number.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.super.correct">{{answers.super.reason[answers.super.selected - 1]}}</p>
+
+  <p class="question">Why is a Tax File Number useful with Centrelink assistance?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.centrelink.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.centrelink.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="centrelink" value="1" checked ng-model="answers.centrelink.selected" />
+      Centrelink will pay you more if you have a Tax File Number.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="centrelink" value="2" ng-model="answers.centrelink.selected" />
+      Centrelink requires a Tax File Number in order to provide financial assistance.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="centrelink" value="3" ng-model="answers.centrelink.selected" />
+      You can claim more tax back if you have Centrelink assistance with a Tax File Number.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.centrelink.correct">{{answers.centrelink.reason[answers.centrelink.selected - 1]}}</p>
+
+  <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
+  <div ng-show="answers.correct < 3 && answers.submitted">
+    <h2>You scored {{answers.correct}}/5.</h2>
+    <button class="btn btn-default hvr-fade" ng-click="initialise()">Try again?</button>
+  </div>
+  <div ng-show="answers.correct === 5 && answers.submitted">
+    <h2>You scored {{answers.correct}}/5!</h2>
+    <p>Section 2 unlocked.</p>
+    <a href="/#/why" class="btn btn-default">Head there now!</a>
+  </div>
+
+
+</div>
