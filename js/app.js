@@ -8,6 +8,9 @@ app.config(['$routeProvider',
       templateUrl: 'partials/home.html',
       controller:  'HomeController'
     }).
+    when('/about', {
+      templateUrl: 'partials/about.html'
+    }).
     when('/what', {
       templateUrl: 'partials/what.html',
       controller:  'WhatController'
