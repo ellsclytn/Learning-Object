@@ -4,8 +4,8 @@ app.controller('WhatController', ['$scope',
   }
 ]);
 
-app.controller('WhatQuizController', ['$scope',
-  function ($scope) {
+app.controller('WhatQuizController', ['$scope', '$rootScope',
+  function ($scope, $rootScope) {
     $scope.checkAnswers = function() {
       $scope.answers.submitted = true;
       $scope.answers.correct   = 0;
@@ -18,6 +18,10 @@ app.controller('WhatQuizController', ['$scope',
             $scope.answers[question].correct = false;
           }
         }
+      }
+
+      if ($scope.answers.correct === 3 && $rootScope.level === 0) {
+        $rootScope.level = 1;
       }
     };
 

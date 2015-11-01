@@ -6,11 +6,11 @@
       <br />
       <i class="fa fa-long-arrow-down"></i>
       <br />
-      <a class="btn btn-default disabled" href="/#/why" role="button">Why should I get one? <i class="fa fa-lock pull-right"></i></a>
+      <a class="btn btn-default" href="/#/why" role="button" ng-class="{disabled: progress < 1}">Why should I get one? <i class="fa fa-lock pull-right" ng-show="progress < 1"></i></a>
       <br />
       <i class="fa fa-long-arrow-down"></i>
       <br />
-      <a class="btn btn-default disabled" href="/#/how" role="button">How do I get one? <i class="fa fa-lock pull-right"></i></a>
+      <a class="btn btn-default" href="/#/how" role="button" ng-class="{disabled: progress < 2}">How do I get one? <i class="fa fa-lock pull-right" ng-show="progress < 2"></i></a>
     </div>
   </div>
 </div>

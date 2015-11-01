@@ -38,6 +38,8 @@ app.config(['$routeProvider',
   }
 ]);
 
+var level = 0;
+
 /*
  * Helpers
  */

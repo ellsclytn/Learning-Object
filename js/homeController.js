@@ -1,6 +1,9 @@
-app.controller('HomeController', ['$scope',
-  function ($scope) {
-    // TODO: Code
+app.controller('HomeController', ['$scope', '$rootScope',
+  function ($scope, $rootScope) {
+    if (!$rootScope.level) {
+      $rootScope.level = 0;
+    }
+    $scope.progress = $rootScope.level;
   }
 ]);
 
