@@ -36,8 +36,8 @@ app.controller('WhatQuizController', ['$scope', '$rootScope',
           answer:   '1',
           reason:   [
             '',
-            'That\'s wrong because...',
-            'That\'s wrong because...'
+            'That\'s not quite right. Tax File Numbers identify people, not forms.',
+            'That\'s not quite right. Tax File Numbers identify people, not invoices.'
           ],
           correct:  false
         },
@@ -45,9 +45,9 @@ app.controller('WhatQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '2',
           reason:   [
-            'That\'s wrong because...',
+            'That\'s incorrect. A Tax File Number is permanent for an individual.',
             '',
-            'That\'s wrong because...'
+            'That\'s incorrect. A Tax File Number is permanent for an individual.'
           ],
           correct:  false
         },
@@ -55,8 +55,8 @@ app.controller('WhatQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '3',
           reason:   [
-            'That\'s wrong because...',
-            'That\'s wrong because...',
+            'That\'s right, but there\'s more than just one use for the Tax File Number...',
+            'That\'s right, but there\'s more than just one use for the Tax File Number...',
             ''
           ],
           correct:  false

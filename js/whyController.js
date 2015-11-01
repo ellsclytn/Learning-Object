@@ -35,8 +35,8 @@ app.controller('WhyQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '3',
           reason:   [
-            'That\'s wrong because...',
-            'That\'s wrong because...',
+            'Not quite. There is no age restriction on getting a Tax File Number.',
+            'While you may have more tax withheld without a Tax File Number, there is no requirement to have a one with a job.',
             ''
           ],
           correct:  false
@@ -45,9 +45,9 @@ app.controller('WhyQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '2',
           reason:   [
-            'That\'s wrong because...',
+            'Tax File Numbers do not have an expiry date.',
             '',
-            'That\'s wrong because...'
+            'Your Tax File Number sticks with you for life, so you won\'t need a new one at a new job.'
           ],
           correct:  false
         },
@@ -56,8 +56,8 @@ app.controller('WhyQuizController', ['$scope', '$rootScope',
           answer:   '1',
           reason:   [
             '',
-            'That\'s wrong because...',
-            'That\'s wrong because...'
+            'Close. Having a Tax File Number doesn\'t necessarily mean you won\'t get income taxed, but it will reduce it.',
+            'Having or not having a Tax File Number has no effect on what jobs you\'re allowed to perform.'
           ],
           correct:  false
         },
@@ -65,9 +65,9 @@ app.controller('WhyQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '2',
           reason:   [
-            'That\'s wrong because...',
+            'A Tax File Number can be joined to a super fund, but it doesn\'t make one for you.',
             '',
-            'That\'s wrong because...'
+            'Employer super contributions are set by the government. Your employer can contribute more if they wish, but having a Tax File Number won\'t change the government specified rate of contribution.'
           ],
           correct:  false
         },
@@ -75,9 +75,9 @@ app.controller('WhyQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '2',
           reason:   [
-            'That\'s wrong because...',
+            'Centrelink benefits are given on the basis that you have a Tax File Number, and so the contribution amount doesn\'t depend on whether you have one or not.',
             '',
-            'That\'s wrong because...'
+            'Centrelink assistance isn\'t taxed like income tax (it\'s not income), so a Tax File Number won\'t change that.'
           ],
           correct:  false
         },

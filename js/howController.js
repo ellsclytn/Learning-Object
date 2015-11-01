@@ -35,8 +35,8 @@ app.controller('HowQuizController', ['$scope', '$rootScope',
           selected: randomAnswer(),
           answer:   '3',
           reason:   [
-            'That\'s wrong because...',
-            'That\'s wrong because...',
+            'You can\'t post your application. They require an in person step. But you can start off with an online form!',
+            'You can\'t post your application. They require an in person step.',
             ''
           ],
           correct:  false
