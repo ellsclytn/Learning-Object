@@ -4,7 +4,7 @@ app.controller('WhyController', ['$scope',
   }
 ]);
 
-app.controller('WhatQuizController', ['$scope',
+app.controller('WhyQuizController', ['$scope',
   function ($scope) {
     $scope.checkAnswers = function() {
       $scope.answers.submitted = true;

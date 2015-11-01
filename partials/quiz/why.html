@@ -122,14 +122,14 @@
   <p ng-show="answers.submitted && !answers.centrelink.correct">{{answers.centrelink.reason[answers.centrelink.selected - 1]}}</p>
 
   <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
-  <div ng-show="answers.correct < 3 && answers.submitted">
+  <div ng-show="answers.correct < 5 && answers.submitted">
     <h2>You scored {{answers.correct}}/5.</h2>
     <button class="btn btn-default hvr-fade" ng-click="initialise()">Try again?</button>
   </div>
   <div ng-show="answers.correct === 5 && answers.submitted">
     <h2>You scored {{answers.correct}}/5!</h2>
-    <p>Section 2 unlocked.</p>
-    <a href="/#/why" class="btn btn-default">Head there now!</a>
+    <p>Section 3 unlocked.</p>
+    <a href="/#/how" class="btn btn-default">Head there now!</a>
   </div>
 
 

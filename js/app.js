@@ -22,11 +22,15 @@ app.config(['$routeProvider',
     }).
     when('/why/quiz', {
       templateUrl: 'partials/quiz/why.html',
-      controller:  'WhatQuizController'
+      controller:  'WhyQuizController'
     }).
     when('/how', {
       templateUrl: 'partials/how.html',
       controller:  'HowController'
+    }).
+    when('/how/quiz', {
+      templateUrl: 'partials/quiz/how.html',
+      controller:  'HowQuizController'
     }).
     otherwise({
       redirectTo: '/'

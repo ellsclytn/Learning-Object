@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>How Do I Get a Tax File Number? - Quiz</h1>
+
+  <p class="question">What are the possible methods for applying for a Tax File Number?
+    <i class="fa fa-times" ng-show="answers.submitted && !answers.applying.correct"></i>
+    <i class="fa fa-check" ng-show="answers.submitted && answers.applying.correct"></i>
+  </p>
+  <div class="radio">
+    <label>
+      <input type="radio" name="applying" value="1" checked ng-model="answers.applying.selected" />
+      By mail and online.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="applying" value="2" ng-model="answers.applying.selected" />
+      By filling out an application and posting it.
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="applying" value="3" ng-model="answers.applying.selected" />
+      By filling out a physical or online form.
+    </label>
+  </div>
+  <p ng-show="answers.submitted && !answers.when.correct">{{answers.when.reason[answers.when.selected - 1]}}</p>
+
+  <button class="btn btn-default hvr-fade" ng-click="checkAnswers()" ng-show="!answers.submitted">How did I go?</button>
+  <div ng-show="answers.correct < 1 && answers.submitted">
+    <h2>That's not correct...</h2>
+    <button class="btn btn-default hvr-fade" ng-click="initialise()">Try again?</button>
+  </div>
+  <div ng-show="answers.correct === 1 && answers.submitted">
+    <h2>Correct!</h2>
+    <p>You've unlocked all sections!</p>
+    <a href="/#/" class="btn btn-default">Head home</a>
+  </div>
+
+
+</div>
